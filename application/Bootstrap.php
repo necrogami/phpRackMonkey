@@ -2,13 +2,19 @@
 
 class Bootstrap extends Zend_Application_Bootstrap_Bootstrap
 {
-
-    function _initNameSpace(){
+    /**
+     * Init Namespace
+     */
+    protected function _initNameSpace()
+    {
 		Zend_Loader_Autoloader::getInstance()->registerNamespace("PRM");
 		Zend_Session::start();
 	}
-	
-	function _initRoutes(){
+    /**
+     * Init Routes
+     */	
+	protected function _initRoutes()
+    {
 		$router = Zend_Controller_Front::getInstance()->getRouter();
 		$routesConfig = new Zend_Config_Xml(APPLICATION_PATH . '/configs/routes.xml');
 		$router->addConfig($routesConfig, 'routes');
