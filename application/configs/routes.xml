@@ -47,5 +47,14 @@
                 <action>delete</action>
             </defaults>
         </shiftdelete>
+        <login>
+            <route>/login</route>
+            <defaults>
+                <type>text</type>
+                <module>default</module>
+                <controller>auth</controller>
+                <action>login</action>
+            </defaults>
+        </login>
     </routes>
 </config>
