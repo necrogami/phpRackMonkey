@@ -1,52 +1,6 @@
 <?xml version="1.0"?>
 <config xmlns:zf="http://framework.zend.com/xml/zend-config-xml/1.0/">
     <routes>
-        <hva>
-           	<route>/status/send/:type/:group</route>
-            <defaults>
-                <type>text</type>
-                <group>ex</group>
-                <module>default</module>
-                <controller>status</controller>
-                <action>send</action>
-            </defaults>
-        </hva>
-        <shiftnew>
-            <route>/shift/new/:name</route>
-            <defaults>
-                <name>static</name>
-                <module>default</module>
-                <controller>shift</controller>
-                <action>new</action>
-            </defaults>
-        </shiftnew>
-        <shiftcreate>
-            <route>/shift/list/:type</route>
-            <defaults>
-                <type>index</type>
-                <module>default</module>
-                <controller>shift</controller>
-                <action>list</action>
-            </defaults>
-        </shiftcreate>
-        <shiftedit>
-            <route>/shift/edit/:type</route>
-            <defaults>
-                <type>text</type>
-                <module>default</module>
-                <controller>shift</controller>
-                <action>edit</action>
-            </defaults>
-        </shiftedit>
-        <shiftdelete>
-            <route>/shift/delete/:type</route>
-            <defaults>
-                <type>text</type>
-                <module>default</module>
-                <controller>shift</controller>
-                <action>delete</action>
-            </defaults>
-        </shiftdelete>
         <login>
             <route>/login</route>
             <defaults>
