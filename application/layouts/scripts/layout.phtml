@@ -2,7 +2,9 @@
 $this->headLink()->appendStylesheet($this->baseUrl('css/screen.css'), 'screen')
                  ->appendStylesheet($this->baseUrl('css/screen-alt.css'), 'alternative')
                  ->appendStylesheet($this->baseUrl('css/print.css'), 'print');
-
+<?php $this->headStyle()->captureStart() ?>
+.style1 {color: #C1FF64}
+<?php $this->headStyle()->captureEnd() ?>
 echo $this->doctype(); ?>
 <html lang="en">
   <head>
@@ -12,16 +14,6 @@ echo $this->headTitle();
 echo $this->headLink();
 echo $this->headScript();
 ?>
-    <style type="text/css">
-
-<!--
-
-.style1 {color: #C1FF64}
-
--->
-
-    </style>
-
 </head>
 
 
