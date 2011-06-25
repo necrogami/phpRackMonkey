@@ -9,11 +9,11 @@ echo $this->doctype(); ?>
 <html lang="en">
     <head>
 <?php 
-echo $this->headMeta();
-echo $this->headTitle();
-echo $this->headLink();
-echo $this->headStyle();
-echo $this->headScript();
+echo $this->headMeta()->setIndent(4) . PHP_EOL;
+echo $this->headTitle()->setIndent(4) . PHP_EOL;
+echo $this->headLink()->setIndent(4) . PHP_EOL;
+echo $this->headStyle()->setIndent(4) . PHP_EOL;
+echo $this->headScript()->setIndent(4) . PHP_EOL;
 ?>
     </head>
     <body>
@@ -65,19 +65,19 @@ echo $this->headScript();
             <div class="lighterBackground">
                 <p class="sideBarTitle">Alternative stylesheet</p>
                 <span class="sideBarText">
-                Sinorca contains an alternative stylesheet that renders this side bar differently.
+                    Sinorca contains an alternative stylesheet that renders this side bar differently.
                 </span>
                 <span class="sideBarText">
-                To view the alternative stylesheet in (certain)
-                <span class="titleTip" title="eg: Mozilla, Camino, Netscape 6+">Gecko-based browsers</span>,
-                select <em>Sinorca (alternative)</em> from the <em>View</em> &rsaquo; <em>Use Style</em>
-                submenu.
+                    To view the alternative stylesheet in (certain)
+                <span class="titleTip" title="eg: Mozilla, Camino, Netscape 6+">Gecko-based browsers,
+                    select <em>Sinorca (alternative)</em> from the <em>View</em> &rsaquo; <em>Use Style</em>
+                    submenu.
                 </span>
             </div>
             <div>
                 <p class="sideBarTitle">Validation</p>
                 <span class="sideBarText">
-                Validate the <a href="http://validator.w3.org/check/referer">XHTML</a> and
+                    Validate the <a href="http://validator.w3.org/check/referer">XHTML</a> and
                 <a href="http://jigsaw.w3.org/css-validator/check/referer">CSS</a> of this page.
                 </span>
             </div>
@@ -93,8 +93,7 @@ echo $this->headScript();
             <br class="doNotDisplay doNotPrint" />
             <div class="right">
                 This design is (almost) public domain.<br />
-                <a href="/developed" class="doNotPrint">Developed by<br />
-                </a>
+                <a href="/developed" class="doNotPrint">Developed by</a><br />
                 Courtesy of <a href="http://www.openwebdesign.org" target="_blank">Open Web Design</a> 
             </div>
         </div>
